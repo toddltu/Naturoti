@@ -158,10 +158,10 @@
             <h2><?= blockFixer('b3_h2')?></h2> <!-- b3_h2 -->
             <div class="uk-custom-grid uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
                 <div>
-                    <div><?= blockFixer('b3_block_a')?></div> <!-- b3_block_a -->
+                    <div><span><?= blockFixer('b3_block_a')?></span></div> <!-- b3_block_a -->
                 </div>
                 <div>
-                    <div><?= blockFixer('b3_block_b')?></div> <!-- b3_block_b -->
+                    <div><span><?= blockFixer('b3_block_b')?></span></div> <!-- b3_block_b -->
                 </div>
             </div>
             <div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>

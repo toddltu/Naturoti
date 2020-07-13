@@ -1,0 +1,196 @@
+*, body{
+    section {
+        h1, h2, h3, h4, h5, h6, span, div {
+            font-family: 'Catamaran', sans-serif;
+        }
+    }
+}
+[class^="sec-"]{
+    position: relative;
+}
+.blocks{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    .block-item{
+        background-color: #fff;
+        border-radius:4px;
+        padding: 10px 15px;
+        display: block;
+    }
+    .uk-first-column{
+        padding-left:0!important;
+    }
+}
+ul.uk-custom-ul{
+    $boderColor: #e2d286;
+    li{
+        margin: 15px 0;
+        border-radius: 5px;
+        //border: 1px solid $boderColor;
+        background-color: #678878;
+        padding: 10px 10px 10px 40px;
+        position: relative;
+        color: #ffffff;
+
+        &:before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/ul-li-index.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 19px;
+            height: 28px;
+            top: 12px;
+            left: 12px;
+        }
+        &:nth-child(odd){
+            background-color:#02391e;
+            //border: 1px solid $boderColor;
+        }
+    }
+}
+.uk-custom-green-button{
+    border-radius: 5px;
+    color: #02391e;
+    border: 1px solid #02391e;
+}
+.uk-custom-gallery{
+    a{
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        img{
+            margin: 0 auto;
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            display: block;
+            box-shadow: -5px 5px 20px -10px #000;
+            border-radius: 5px;
+        }
+    }
+}
+.uk-custom-self-center{
+    align-self: center;
+}
+.uk-custom-grid{
+    & > div{
+        div{
+            border:1px solid #b7a656;
+            padding: 50px 20px;
+            background-color: #fcf6d9;
+            border-radius: 8px;
+        }
+        &:nth-child(odd){
+            div{
+                background-color: #f8eec1;
+            }
+        }
+    }
+}
+.bg-line{
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.bg-sides{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    .bg-side-left,.bg-side-right,.bg-side-top,.bg-side-bottom{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .bg-side-left{
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-position: bottom left;
+    }
+    .bg-side-right{
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-position: bottom right;
+    }
+    .bg-side-top{
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-position:  top center;
+    }
+    .bg-side-bottom{
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-position:  bottom center;
+    }
+}
+// sections
+.sec-head{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.sec-b0{
+    .uk-grid{
+        .side-img-div{
+            align-self: center;
+            text-align: right;
+
+            .side-img{
+                img:first-child{
+                    margin: 70px 0 20px;
+                    box-shadow: -5px 5px 20px -10px #000;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.sec-b1{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    .uk-grid {
+        .side-img-div {
+            align-self: center;
+            text-align: center;
+            .side-img {
+                img:first-child {
+                    box-shadow: 5px 5px 20px -10px #000;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.sec-b4{
+    padding-top: 150px;
+    padding-bottom: 250px;
+}
+// Mobile
+@media screen and (max-width: 990px){
+    .sec-head{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .sec-b1 {
+        padding-bottom: 150px;
+    }
+    .sec-b4{
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+}
